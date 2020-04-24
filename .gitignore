@@ -105,7 +105,8 @@ dist/
 .dynamodb/
 
 # Temporary folders
-tmp/
 temp/
+tmp/*
+!tmp/.gitkeep
 
 # End of https://www.gitignore.io/api/node
