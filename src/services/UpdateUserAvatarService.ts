@@ -5,6 +5,8 @@ import uploadConfig from '../config/upload'
 
 import User from '../models/User'
 
+import AppError from '../errors/AppError'
+
 interface Request {
   user_id: string
   avatarFilename: string
@@ -17,7 +19,10 @@ class UpdateAvatarUserService {
     const user = await usersRepository.findOne(user_id)
 
     if (!user) {
-      throw new Error('Somente usuários autenticados podem trocar a foto')
+      throw new AppError(
+        'Somente usuários autenticados podem trocar a foto',
+        401,
+      )
     }
 
     if (user.avatar) {
