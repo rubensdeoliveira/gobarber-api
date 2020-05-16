@@ -109,4 +109,6 @@ temp/
 tmp/*
 !tmp/.gitkeep
 
+ormconfig.json
+
 # End of https://www.gitignore.io/api/node
