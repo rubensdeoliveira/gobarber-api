@@ -36,7 +36,9 @@ class CreateAppointmentService {
     const appointmentDate = startOfHour(date)
 
     if (isBefore(appointmentDate, Date.now())) {
-      throw new AppError('You can not create an appointment on a paste date')
+      throw new AppError(
+        'Você não pode criar um agendamento em uma data passada',
+      )
     }
 
     if (user_id === provider_id) {
