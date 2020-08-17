@@ -1,0 +1,10 @@
+[0;1;31m●[0m mongod.service - MongoDB Database Server
+     Loaded: loaded (/lib/systemd/system/mongod.service; disabled; vendor preset: enabled)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Mon 2020-08-17 00:18:07 -03; 6min ago
+       Docs: https://docs.mongodb.org/manual
+   Main PID: 17695 (code=exited, status=48)
+
+ago 17 00:18:07 rubensjunior-G3-3579 systemd[1]: Started MongoDB Database Server.
+ago 17 00:18:07 rubensjunior-G3-3579 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmongod.service: Main process exited, code=exited, status=48/n/a[0m
+ago 17 00:18:07 rubensjunior-G3-3579 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmongod.service: Failed with result 'exit-code'.[0m
+ago 17 00:24:07 rubensjunior-G3-3579 systemd[1]: [0;1;39m[0;1;31m[0;1;39m/lib/systemd/system/mongod.service:11: PIDFile= references a path below legacy directory /var/run/, updating /var/run/mongodb/mongod.pid → /run/mongodb/mongod.pid; please update the unit file accordingly.[0m
